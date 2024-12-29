@@ -1,0 +1,135 @@
+<?php
+$pr_emonav="<FONT COLOR=grey>navigation:</FONT><FONT COLOR=#01b6e8>emotionelle</FONT>";
+$pr_welcome="Bienvenue";
+$pr_username="Nom d'usager";
+$pr_password="Mot de passe";
+$pr_signin="Connectez-vous";
+$pr_join="Cliquer ici pour vous inscrire - c'est gratuit!";
+$pr_about="A propos de how:now";
+$pr_about_txt="La fonction premiere de how:now est de vous aider a ameliorer votre qualitee de vie... parce ce qu'il est toujours plus facile de changer les choses que l'on peut voir.";
+$pr_how="Comment &ccedil;a marche";
+$pr_how_txt="how:now vous permet de suivre vos etats emotionel et physique, et de visualizer ces informations a travers different types de tableaux graphiques. C'est une cartographie emotionelle de ce qui vous arrive au quotidien.";
+$pr_why="Pourquoi c'est important?";
+$pr_why_txt="how:now vous permet de voir et comprendre comment vous reagissez a de nouvelle relations, medicaments, dietes, methode sportive et physiques, coup de coeur et vous permet de vous en sortir ou d'atteindre un but que vous vous etes fixer";
+
+$pr_brought="presente par sean & sylvio";
+$pr_contact="contactez-nous";
+
+$pr_signup="Inscrivez-vous gratuitement!";
+$pr_chooseuser="Choissisez un nom d'usager";
+$pr_choosepass="Choissisez une mot de passe";
+$pr_email="C'est quoi ton address e-mail?";
+$pr_letsgo="Vas-y!";
+
+$pr_howareyou="comment &ccedil;a va?";
+$pr_greatcrap="Bien +10 / Mal 0";
+$pr_why="Pourquoi?";
+$pr_clickhere="Cliquez ici pour votre emograph";
+$pr_more="cliquez ici pour d'autres types d'emotions";
+
+$pr_angry="fach&eacute;";
+$pr_fear="peur";
+$pr_lonely="seule";
+$pr_hungry="faim";
+$pr_tired="fatigues?";
+$pr_sick="malade?";
+$pr_pain="douleur?";
+$pr_high="intox?";
+$pr_basic="revenir au mode simple";
+
+$pr_logout="Deconnexion";
+
+$pr_output="l'emograph - cliquer pour plus de details";
+$pr_graphmore="Visualizer autre chose!";
+
+/*
+* THE settings.php FILE
+*/
+$pr_settings="Vos Parametres";
+$pr_chooselang="Choisissez votre langue";
+$pr_who="Qui peut voir votre tableau d'emotions?";
+
+$pr_public="Publique";
+$pr_friends="Amis";
+$pr_private="Prive";
+$pr_halt="Suivre HALT: faim/fache/solitude/fatigue";
+$pr_drunk="Suivre fatigue/maladie/anxietee/intoxication";
+$pr_others="Suivre autre!";
+$pr_which="relations/famille/amis/collegues";
+$pr_name="Nom";
+$pr_trackmore="Suivre autre choses";
+$pr_stuff="poid/exercise/depenses/heures de travail/cigarettes/etc";
+$pr_track="Suivre";
+$pr_personal="Touches Personelles";
+$pr_bio="Date de naissance";
+$pr_env="La ville plus proche";
+$pr_tel="No de telephone (pour les textos)";
+$pr_twit="Nom d'usager sur Twitter";
+$pr_save="Sauvegarder ces changements";
+
+$pr_abouthalt="A propos de HALT";
+$pr_haltinfo="HALT veut dire (avec abbreviations en anglais) Hungry (Affame), Angry (Fache), Lonely (Seule), Tired (Fatigue).  Ces parametres ont un effet serieux sur votre etat emotionel general , et nous avons tendence a les mettre souvent de cote.";
+$pr_aboutphys="Etats Physique";
+$pr_phys="Votre etat physique affecte votre etat emotionel, donc il est important d'en connaitre plus a propos de la douleur et de la maladie, meme si vous etes intoxique";
+$pr_aboutprivacy="Confidentialitee";
+$pr_privacy="La confidentialitee est importante.  C'est pourquoi vous pouvez specifier qui peut voir vos tableau d'emotions - soit publique - tout le monde, vos amis, ou confidentiel - juste vous.";
+$pr_aboutfun="Choses agreable";
+$pr_fun="Toute sorte de choses nous affectent chaque jour, c'est pourquoi vous pouvez avoir acces a votre 
+biorythmes ainsi qu'a des information environnementales comme vos heure de lumiere, etc.";
+
+$pr_measure="Mesurer le!";
+$pr_measuretxt="Utilisez la fenetre a gauche pour mesurer votre etat du moment sur une echelle de 0-10.  Vous pouvez ajouter un commentaire et cliquez sur un des icones si quelque chose de special se passe a ce moment";
+
+$pr_measuremore="Mesurez encore plus de choses!";
+$pr_mmtxt="En cliquant sur ce liens ci-bas, vous pourrez mesurer une grande quantitee d'emotions, etats physiques, progression par rapport a un but fixe, meme votre pensee sur d'autre individus. Cliquez sur le bouton Parametres pour avoir rajouter vos propres elements a suivre.";
+
+$pr_often="Mesurez souvent!";
+$pr_oftentxt="Mesurez aussi souvent que vous le desirez avec autant de parametres que vous le desirez.  Le plus d'information vous aurez, le plus facile il vous sera de voir l'emergence de nouvelle tendences - tendences que vous pourrez changer... parce que vous ne pouvez pas changer ce que vous ne pouvez pas voir!";
+$pr_trmore="Suivez plus";
+$pr_stop="Suivez les choses que ta arrete";
+$pr_istopped="J'ai arrete";
+
+$pr_graphs="Visualiser vos chartes";
+$pr_twitanon="Support anonyme";
+
+$pr_invalidlogin="Mauvais nom d'usager ou mot de passe, essayez encore...";
+$pr_nametaken="Ce nom d'usager est deja prise, choisissez une autre...";
+$pr_emailtaken="Cette address e-mail a deja ete utili&eacute;, choisissez un autre...";
+$pr_input="Entrer des donnees";
+$pr_about="apropos de how:now";
+$pr_help="aide";
+$pr_friends="Comment sont vos amis?";
+$pr_friendsgraphs="cliquez sur le nom pour voir leur chartes";
+$pr_dofriends="inviter/enlever les amis";
+$pr_invite="nom d'usager ou addresse e-mail:";
+$pr_inviteinfo="invitez vos amis";
+$pr_remove="supprimer un ami";
+
+$pr_emo="Votre Emographe";
+$pr_emo_txt="This is a sample emograph... measure your happiness on a scale from 1-10, 1 being miserable, and 10 being ecstatic - you can give a reason if you like.
+<BR><BR>
+Note that you can input via e-mail <A HREF=\"mailto:me@hownow.me\">me@hownow.me</A> and <A HREF=\"http://twitter.com\">Twitter</A> as well... just use the form E@#, i.e. E@10 is pretty happy!";
+
+$pr_halt="HALT";
+$pr_halt_txt="This is the HALT graph... HALT stands for Hungry-Angry-Lonely-Tired.  <BR><BR>
+These states are generally transient, meaning they don't last for too long; however, it's important to keep track of them since they, probably more than any other emotions, can adversly affect our behavior and actions.";
+
+$pr_fspd="FSPD";
+$pr_fspd_txt="This is the FSPD graph - short for Fear, Sick, Pain, and Drunk.
+<BR><BR>
+Fear includes things like apprehension, nervousness and anxiety.
+<BR><BR>
+Pain likewise has an obvious effect on our happiness.
+<BR><BR>
+Sick - not feeling well affects your mood... so track it here.
+<BR><BR>
+Drunk - includes being under the influence of any mind altering chemical, legal or not.";
+
+$pr_bio="Biothythms";
+$pr_bio_txt="how:now calculates you biorhythms every day.  The idea is that when the lines are low, you're low physically, emotionally, or intellectually.  On the other hand, when the lines are high, you're in great shape.  
+<BR><BR>
+However, the real thing to watch out for is when the lines cross the center line... those are known as 'critical days', and you need to pay attention more carefully...";
+$pr_inv="Inviter";
+$pr_del="Supprimer";
+$pr_farewell="Au revoir";
+?>

@@ -1,0 +1,74 @@
+<?php
+include ("include/db.php");
+include ("graph/graphs.php");
+# include ("jp/src/jpgraph.php");
+# include ("jp/src//jpgraph_line.php");
+# include ("jp/src//jpgraph_date.php");
+
+/*
+ * GENERATE ALL GRAPHS FOR A USER WHEN THEY'VE SUMBITTED DATA
+ */
+
+$id=1007;	# SMM TEST
+
+/* NOW SUCK THE DATA OUT AND FORMAT IT FOR A CHART */
+$query = "SELECT E, UNIX_TIMESTAMP(added) as unixtime from emotags  WHERE id = \"$id\" ORDER BY count";
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+
+$data = array();
+$xdata = array();
+
+// print "NUM: " . mysql_num_rows($result) . "\n";
+
+while ($row = mysql_fetch_array($result)) {
+	$data[] = $row['E'];
+	$xdata[] = $row['unixtime'];
+} 
+
+$label = "Emograph";
+$gname = "public/" .  $id . "." . "emo.png";
+$color = "blue";
+emograph($label, $gname, $color, $xdata, $data);
+
+$hdata = array();
+$adata = array();
+$ldata = array();
+$tdata = array();
+$htime = array();
+$atime = array();
+$ltime = array();
+$ttime = array();
+
+/* NOW LETS DO THE HALT GRAPHS */
+$query = "SELECT h, UNIX_TIMESTAMP(added) as unixtime from moredata  WHERE id = \"$id\" AND h IS NOT NULL ORDER BY count";
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+while ($row = mysql_fetch_array($result)) {
+	$hdata[] = $row['h'];
+	$htime[] = $row['unixtime'];
+}
+
+/* A */
+$query = "SELECT a, UNIX_TIMESTAMP(added) as unixtime from moredata  WHERE id = \"$id\" AND a IS NOT NULL ORDER BY count";
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+while ($row = mysql_fetch_array($result)) {
+	$adata[] = $row['a'];
+	$atime[] = $row['unixtime'];
+}
+
+/* L */
+$query = "SELECT l, UNIX_TIMESTAMP(added) as unixtime from moredata  WHERE id = \"$id\" AND l IS NOT NULL ORDER BY count";
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+while ($row = mysql_fetch_array($result)) {
+	$ldata[] = $row['l'];
+	$ltime[] = $row['unixtime'];
+}
+
+$label = "H-A-L-T";
+$color="red";
+$gname = "public/" .  $id . "." . "halt.png";
+$h="Hungry";
+$a="Angry";
+$l="Lonely";
+$t="Tired";
+graph3($label, $gname, $color, $h, $a, $l, $htime, $hdata,  $atime, $adata, $ltime, $ldata);
+?>

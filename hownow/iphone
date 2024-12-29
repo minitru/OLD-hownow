@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# STARSHOUT IPHONE CONVERSION
+#
+
+INFILE="$1"
+set `echo $INFILE | sed "s/\./\ /g"`
+BASENAME="$1"
+OUTFILE="$BASENAME.mp4"
+# 16x9 is 480x270
+# ffmpeg -i $INFILE -f mp4 -vcodec xvid -maxrate 1000 \
+ffmpeg -i $INFILE -f mp4 -vcodec mpeg4 -maxrate 1000 \
+       -qmin 3 -qmax 5 -bufsize 4096 -g 300 -acodec libfaac \
+       -s 480x320 -padtop 24 -padbottom 24 \
+       -ab 128 -b 400 $OUTFILE
+
+# ffmpeg -i "$INFILE" -f mp4 -vcodec mpeg4 -maxrate 1000 -qmin 3 -qmax 5 -bufsize 4096 -g 300 -acodec libfaac -ab 128 -s 320x240 -b 400 -aspect 4:3 "$OUTFILE"
+rm $BASENAME.m4v
+ln $OUTFILE $BASENAME.m4v

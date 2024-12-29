@@ -1,0 +1,4 @@
+email: sean@cloudpanic.net
+conf: 393142
+query: SELECT * FROM users WHERE email='sean@cloudpanic.net'
+FROM ID: 1  TO ID:2

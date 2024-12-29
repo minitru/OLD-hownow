@@ -1,0 +1,267 @@
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+	background: #ffffff url(../images/background.gif) repeat-x; }
+	
+	.hidden {
+		display: none; }
+		
+	#container {
+		position: relative;
+		margin: 0 auto;
+		width: 750px;
+		max-width: 750px;
+		text-align: center;
+		background: url(../images/container.gif) center top no-repeat; }
+		
+		#innerContainer {
+			position: relative;
+			margin: 0 auto;
+			width: 600px;
+			max-width: 600px;
+			text-align: left; }
+		
+			#header {
+				position: relative;
+				height: 125px; }
+				
+				#header h1 a {
+					position: absolute;
+					top: 68px;
+					left: 15px;
+					font-size: 36px;
+					font-weight: bold;
+					#text-transform: uppercase;
+					color: #727272;
+					text-decoration: none;
+					letter-spacing: -1.5px; }
+					
+					#header h1 a span {
+						color: #01b6e8; }
+				
+				#header h2 {
+					position: absolute;
+					top: 105px;
+					left: 15px;
+					font-size: 12px;
+					font-weight: normal;
+					color: #727272;
+					text-transform: lowercase; }
+					
+				#navigation {
+					position: absolute;
+					bottom: 0;
+					right: 15px;
+					height: 30px; }
+						
+						#navigation li {
+							float: left;
+							height: 30px; }
+							
+							#navigation a {
+								display: block;
+								width: 75px;
+								height: 30px;
+								line-height: 30px;
+								text-align: center;
+								font-size: 12px;
+								text-decoration: none;
+								text-transform: lowercase;
+								color: #01b6e8; }
+								
+							#navigation a:hover {
+								color: #ffffff;
+								background-color: #01b6e8;
+								text-decoration: none; }
+								
+								
+							/* NOTE [Uncomment this CSS rule to allow the active sections' navigation tab to be highlighted] */
+							#navigation a.active {
+								color: #ffffff;
+								background-color: #01b6e8; }
+								
+			#content {
+				position: relative;
+				line-height: 1.3em; }
+				
+				#content h3,
+				#content h4,
+				#content h5,
+				#content p,
+				#content ul,
+				#content ol,
+				#content form,
+				#content table {
+					margin-bottom: 10px; }
+					
+				#content h3 {
+					font-size: 24px;
+					font-weight: normal;
+					color: #01b6e8;
+					# text-transform: uppercase;
+					letter-spacing: -1.5px; }
+					
+				#content a {
+					color: #01b6e8;
+					text-decoration: none; }
+					
+				#content a:hover {
+					color: #727272;
+					background-color: #01b6e8;
+					text-decoration: none; }
+					
+				#content form div {
+					clear: both; }
+					
+					#content form div label {
+						float: left;
+						margin-bottom: 5px;
+						width: 200px; }
+					
+					#content form div input,
+					#content form div select,
+					#content form div textarea {
+						float: left;
+						margin-left: 10px;
+						# width: 400px;
+						border: 1px solid #01b6e8;
+						color: #727272;
+						background: #ffffff url(../images/controls.gif) top left no-repeat;
+						font-family: arial, verdana, helvetica, sans-serif;
+						font-size: 20px; }
+						
+				#content .button {
+					clear: both;
+					margin: 10px 10px 0 10px;
+					float: right;
+					border: 0;
+					width: 100px;
+					height: 30px;
+					cursor: pointer;
+					color: #ffffff;
+					background-color: #01b6e8;
+					font-family: arial, verdana, helvetica, sans-serif;
+					font-size: 12px;
+					text-transform: lowercase; }
+						
+				#content .required {
+					font-size: 20px;
+					color: #01b6e8; }
+					
+				#content .formNote {
+					margin-top: -10px;
+					clear: both; }
+					
+				#content .email {
+					display: none;
+					color: #01b6e8; }
+					
+				#content .warning {
+					display: none;
+					color: #01b6e8; }
+				
+				#about,
+				#friends,
+				#contact2,
+				#contact,
+				.panel {
+					position: relative;
+					padding: 15px 30px 45px 15px;
+					width: 570px;
+					height: 370px;
+					background: url(../images/panel.gif) no-repeat; }
+				.formtitle {
+					padding: 5px 10px 5px 10px;
+					font-size: 22px; }
+					
+				#sean {
+					position: relative;
+					width: 600px; }
+					
+					#sean .panel .overview {
+						margin-top: 10px; 
+						margin-bottom: 10px; }
+						
+						#sean .panel .overview img {
+							float: left;
+							margin: 0 10px 5px 0;
+							border: 5px solid #ffffff; }
+							
+					#sean .panel .extended {
+						clear: left; }
+						
+					#sean .carouselContainer {
+						margin: 0;
+						padding: 0;
+					
+				#portfolio {
+					position: relative;
+					width: 600px; }
+					
+					#portfolio .panel .overview {
+						margin-top: 10px; 
+						margin-bottom: 10px; }
+						
+						#portfolio .panel .overview img {
+							float: left;
+							margin: 0 10px 5px 0;
+							border: 5px solid #ffffff; }
+							
+					#portfolio .panel .extended {
+						clear: left; }
+						
+					#portfolio .carouselContainer {
+						margin: 0;
+						padding: 0;
+						list-style-type: none; }
+						
+						.carouselContainer li {
+							width: 570px; }
+						
+						.scrollButton {
+							text-indent: -3000em;
+							position: absolute;
+							top: 168px;
+							display: block;
+							width: 75px;
+							height: 64px;
+							background: url(../images/arrows.gif) no-repeat; }
+							
+						#scrollLeft {
+							left: -75px;
+							background-position: 0 0; }
+							
+						#scrollLeft:hover,
+						#scrollLeft.hover {
+							cursor: pointer;
+							background-position: 0 -64px; }
+							
+						#scrollRight {
+							right: -75px;
+							background-position: -75px 0; }
+							
+						#scrollRight:hover,
+						#scrollRight.hover {
+							cursor: pointer;
+							background-position: -75px -64px; }
+				
+			#footer {
+				z-index: 999;
+				position: relative;
+				clear: both;
+				margin: -15px 15px 0 15px;
+				padding-bottom: 40px;
+				text-align: right;
+				font-size: 9px;
+				color: #01b6e8; }
+				
+				#footer a {
+					color: #01b6e8;
+					text-decoration: none; }
+					
+				#footer a:hover {
+					color: #ffffff;
+					background-color: #01b6e8;
+					text-decoration: none; }

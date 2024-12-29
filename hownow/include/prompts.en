@@ -1,0 +1,141 @@
+<?php
+$pr_emonav="<FONT COLOR=#01b6e8>emotional:</FONT><FONT COLOR=grey>navigation</FONT>";
+$pr_welcome="Welcome - please sign in!";
+$pr_username="Username";
+$pr_password="Password";
+$pr_signin="Sign in";
+$pr_join="Click here to join - it's free!";
+$pr_about="About how:now";
+$pr_about_txt="The sole purpose of how:now is to help you improve your life... because you can't change something you can't see.";
+$pr_how="How it works";
+$pr_how_txt="how:now lets you track your physical and emotional states, and displays this information as a graph. It's an emotional map that shows you where you're going and how you're doing.";
+$pr_why="Why does this matter?";
+$pr_why_txt="how:now lets you see how you react to new relationships, medications, diets, fitness regimes, breakups, whatever, and can help you meet your goals.";
+$pr_brought="brought to you by sean & sylvio";
+$pr_contact="contact us";
+
+$pr_signup="Sign up for free!";
+$pr_chooseuser="Choose a Username";
+$pr_choosepass="Choose a Password";
+$pr_email="Your email";
+$pr_letsgo="Let's go!";
+
+$pr_howareyou="how are you doing?";
+$pr_greatcrap="Terrible 0 / Great 10";
+$pr_why="Why?";
+$pr_clickhere="SUBMIT";
+$pr_more="more/less measurements - click here";
+
+$pr_hungry="Hungry?";
+$pr_angry="Angry?";
+$pr_lonely="Lonely?";
+$pr_tired="Tired?";
+
+$pr_fear="Anxiety?";
+$pr_sick="Sick?";
+$pr_pain="Pain?";
+$pr_high="Drunk/High?";
+
+$pr_basic="go back to basic mode";
+
+$pr_logout="logout";
+$pr_settings="Click here for settings";
+
+$pr_output=" emographs - click for details";
+$pr_graphmore="Graph more stuff!";
+
+/*
+ * THE settings.php FILE
+ */
+$pr_personal="Personal Settings";
+$pr_chooselang="Choose your language";
+$pr_who="Who can see your basic graph?";
+
+$pr_public="Public";
+$pr_friends="Friends";
+$pr_private="Private";
+$pr_track="Track";
+$pr_drunk="Track tired/sick/anxious/under the influence";
+$pr_others="Track others!";
+$pr_which="relationship/family/friends/coworkers";
+$pr_name="Name";
+$pr_trackmore="Track progress towards your goals";
+$pr_stuff="weight/exercise/spending/hours worked/smoking/etc";
+$pr_track="Track";
+$pr_bday="What is your birthday?";
+$pr_env="Where do you live (nearest city)?";
+$pr_tel="Telephone number (for input via txt msg)?";
+$pr_twit="Twitter ID (for input via twitter)";
+$pr_env="Where do you live (nearest city)?";
+$pr_save="Save Changes";
+
+$pr_abouthalt="About HALT";
+$pr_haltinfo="HALT stands for Hungry, Angry, Lonely, Tired.  These conditions have a serious affect on mood, and we often overlook them.";
+$pr_aboutdata="Universal Data Entry for how:now";
+$pr_datainfo="how:now lets you enter emotional info from anywhere - by web, text message, e-mail, twitter, and more - that's why we ask for your phone number and ID's - so when we get messages we know they're from you!";
+$pr_aboutphys="Physical States";
+$pr_phys="Your physical state affects your emotional state, so it's important to know about pain, sickness, or even if you're under the influence";
+$pr_aboutprivacy="Privacy";
+$pr_privacy="Your privacy is important.  That's why you can specify who can see each one of your graphs - either public - everyone, friends, or private - just you.";
+$pr_aboutfun="Fun Stuff";
+$pr_fun="All sorts of things can affect us, that's why you can get your 
+biorhythms and some environmental information like hours of sunlight, etc.";
+
+$pr_measure="Measure it!";
+$pr_measuretxt="Use the form on the left to measure how you feel on a scale from 0-10.  You can add a quick description of what's going on and you can click on an icon if there's something special happening.";
+
+$pr_measuremore="Measure more stuff!";
+$pr_mmtxt="By clicking on the more/less link below you can measure a wide range of emotions, physical states, progress towards goals, even other people.  Click on the Settings button above to add more things to track.";
+
+$pr_often="Measure often!";
+$pr_oftentxt="Measure as much as you want, as often as you want.  The more information you have, the easier it will be to see patterns emerge - patterns you can then change... because you can't change what you can't see.";
+
+$pr_stop="Track stuff you've stopped doing";
+$pr_istopped="I stopped";
+$pr_stopdate="On";
+$pr_trmore="Track more";
+
+$pr_graphs="View your graphs";
+$pr_twitanon="Anonymous support";
+
+$pr_invalidlogin="Invalid login, try again...";
+$pr_nametaken="That username is already taken, try again...";
+$pr_emailtaken="That email address has already been used, try again...";
+$pr_input="Enter more data";
+$pr_about="about how:now";
+$pr_help="help";
+$pr_friendsgraphs="click on the name for their graphs";
+$pr_dofriends="invite/remove friends";
+$pr_invite="username or e-mail";
+$pr_inviteinfo="invite a friend - fill in the form and hit invite";
+$pr_remove="remove friends - select a friend and hit remove";
+
+$pr_emo="Your Emograph";
+$pr_emo_txt="This is a sample emograph... measure your happiness on a scale from 1-10, 1 being miserable, and 10 being ecstatic - you can give a reason if you like.
+<BR><BR>
+Note that you can input via e-mail <A HREF=\"mailto:me@hownow.me\">me@hownow.me</A> and <A HREF=\"http://twitter.com\">Twitter</A> as well... just use the form E@#, i.e. E@10 is pretty happy!";
+
+$pr_halt="HALT";
+$pr_halt_txt="This is the HALT graph... HALT stands for Hungry-Angry-Lonely-Tired.  <BR><BR>
+These states are generally transient, meaning they don't last for too long; however, it's important to keep track of them since they, probably more than any other emotions, can adversly affect our behavior and actions.";
+
+$pr_fspd="FSPD";
+$pr_fspd_txt="This is the FSPD graph - short for Fear, Sick, Pain, and Drunk.
+<BR><BR>
+Fear includes things like apprehension, nervousness and anxiety.
+<BR><BR>
+Pain likewise has an obvious effect on our happiness.
+<BR><BR>
+Sick - not feeling well affects your mood... so track it here.
+<BR><BR>
+Drunk - includes being under the influence of any mind altering chemical, legal or not.";
+
+$pr_bio="Biothythms";
+$pr_bio_txt="how:now calculates you biorhythms every day.  The idea is that when the lines are low, you're low physically, emotionally, or intellectually.  On the other hand, when the lines are high, you're in great shape.  
+<BR><BR>
+However, the real thing to watch out for is when the lines cross the center line... those are known as 'critical days', and you need to pay attention more carefully...";
+$pr_inv="Invite";
+$pr_del="Remove";
+$pr_farewell="Farewell";
+$pr_goals="Track you goals";
+?>

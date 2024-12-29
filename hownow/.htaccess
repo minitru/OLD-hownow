@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([^/\.]+)$ showgraph.php?user=$1 [L]

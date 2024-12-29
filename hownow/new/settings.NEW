@@ -1,0 +1,55 @@
+<?php
+print "<div>
+<ul class=\"carouselContainer2\">";
+
+print "
+	<!-- PANEL [photo1] -->
+	<li class=\"panel\">
+	<div class=\"overview\">";
+
+	include "new/test.php";
+
+	print "<div class=\"extended\">
+		<h3>sean's emograph</h3>
+	</div></li>";
+
+
+print "
+	<!-- PANEL [photo2] -->
+	<li class=\"panel\">
+	<div class=\"overview\">
+		<img src=\"../public/$id.big.halt.png\" width=\"369px\" height=\"245px\" alt=\"Photo 1\" />
+		<h3>$pr_halt</h3>
+		$pr_halt_txt
+	</div>
+	<div class=\"extended\">
+		<h3>sean's HALT graph</h3>
+	</div></li>";
+
+print "
+	<!-- PANEL [photo3] -->
+	<li class=\"panel\">
+	<div class=\"overview\">
+		<img src=\"../public/$id.big.bio.png\" width=\"369px\" height=\"245px\" alt=\"Photo 1\" />
+		<h3>$pr_bio</h3>
+		$pr_bio_txt
+	</div>
+	<div class=\"extended\">
+		<h3>sean's biorhythms</h3>
+	</div></li>";
+
+print "
+	<!-- PANEL [photo4] -->
+	<li class=\"panel\">
+	<div class=\"overview\">
+		<img src=\"../public/$id.big.fspd.png\" width=\"369px\" height=\"245px\" alt=\"Photo 1\" />
+		<h3>$pr_fspd</h3>
+		$pr_fspd_txt
+	</div>
+	<div class=\"extended\">
+		<h3>sean's FSPD</h3>
+	</div></li>";
+
+print "</div>";
+
+?>

@@ -1,0 +1,66 @@
+<?php
+$em_welcome="Bienvenue a how:now!";
+$em_welcome_txt="Salut  - c'est Sean de how:now.
+
+        Bienvenue chez how:now, ton compte a ete cree et devrait marcher
+        alors vous pouvez commencer visualiser vos chartes immediatement.
+
+        Naviguer a http://hownow.me/ 
+
+	Vous pouvez aussi entre des donnes par courriel a mailto:me@hownow.me
+        et par Twitter (mais seulement si tu nous a donne ton nom sur Twitter...
+
+	C'est facile - le format est E@#, E pour Emotion, pi le niveau entre
+	0-10. Alors E@10 c'est tres, tres heureux.
+
+        Autres  H=Faim (anglais hungry), alors H@2 t'a pas trop faim.
+                A=Fache (anglais Angry), alors A@9 c'est dangereux.
+                L=Seule (anglais Lonely), alors L@0 c'est bon.
+                T=Fatigue (anglais Tired), alors T@2 t'a bien dormi.
+
+	Et tu peux toujours m'envoyer des questions ou commentaires;
+	je comprends le francais mieux que je l'ecrit!
+--
+Sean MacGuire
+sean@hownow.me";
+$em_friendreq="demande d'amitie de";
+$em_new="Salut  - c'est Sean de how:now.
+
+        $insert veut etre amis avec toi.
+
+        Pour accepter, cliquer ici: http://hownow.me/signin.php?section=contact2&email=$insert&conf=$authcode
+
+        how:now est un facon simple de voir comment ca va
+        et voir comment vont tes amis.
+
+        Visualiser le chartes how:now ici 
+                General:  http://hownow.me/sean
+                Detaille: http://hownow.me/big.php?id=1007&graph=emo
+
+        Merci,
+--
+Sean MacGuire
+sean@hownow.me
+
+Friend Request confirmation code FCC@";
+
+$em_old="Salut - c'est Sean de how:now.
+
+        $insert veut etre amis avec toi.
+
+        Pour accepter, cliquer ici: http://hownow.me/gw/cf.php?email=$insert&conf=$authcode%lang=fr; ou simplement reponder a ce courriel.
+
+how:now est un facon simple de voir comment ca va
+        et voir comment vont tes amis.
+
+        Visualiser le chartes how:now ici
+                General:  http://hownow.me/sean
+                Detaille: http://hownow.me/big.php?id=1007&graph=emo
+
+        Merci,
+--
+Sean MacGuire
+sean@hownow.me
+
+Friend Request confirmation code FCC@";
+?>

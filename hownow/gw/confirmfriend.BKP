@@ -1,0 +1,73 @@
+<?php
+include '/home/www/docs/hownow/include/db.php';	/* CONNECT TO THE DB */
+include '/home/www/docs/hownow/chgfriends.php';
+/*
+ * CONFIRM A FRIEND
+ * THIS ACCEPTS INPUT VIA EMAIL ON MAC TO THIS FORM HERE
+ * ONLY INPUT IS REALLY THE CONFIRMATION NUMBER (MAYBE EMAIL ADDRESS AS WELL)
+ */ 
+
+if (!conf) {
+	if ($_POST['email']) {
+		$email = $_POST['email'];
+		if ($_POST['conf']) {
+			$conf = $_POST['conf'];
+		}
+	}
+	else if ($_GET['email']) {
+		$email = $_GET['email'];
+		if ($_GET['conf']) {
+			$conf = $_GET['conf'];
+		}
+		$online="TRUE";		/* NOT JUST A POSTED EMAIL */
+	}
+}
+
+/* SMM TEST
+*/
+$email="eating@twitanon.com";
+$conf="788929";
+
+$name = "/home/www/docs/hownow/data/FRIEND." . getmypid();
+$fp = fopen("$name", 'w');
+fprintf($fp, "email: %s\n", $email);
+fprintf($fp, "conf: %s\n", $conf);
+
+$query = "SELECT * FROM pendingfriends WHERE AUTHCODE='$conf'";
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+if (mysql_num_rows($result) != 0) { 		/* FRIEND ACCEPTED */
+	$row = mysql_fetch_assoc($result);
+	$fromid = $row['fromfriend'];
+	$tofriend = $row['tofriend'];
+
+	$query = "SELECT * FROM users WHERE email='$email'";
+	fprintf($fp, "query: %s\n", $query);
+	$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+	if (mysql_num_rows($result) != 0) { 		/* THEY'RE REGISTERED */
+		$row = mysql_fetch_assoc($result);
+		$toid = $row['id'];
+
+		# print "ADD FRIENDS " . $fromid . " " . $toid;
+		fprintf($fp, "FROM ID: %s  TO ID:%d\n", $fromid, $toid);
+
+		addfriend($fromid, $toid);
+		addfriend($toid, $fromid);
+
+		/* WE CAN DELETE THE PENDING FRIEND RECORD NOW... */
+		$query = "DELETE FROM pendingfriends WHERE AUTHCODE='$conf'";
+		$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+	}
+	/* 
+	 * IF THE FRIEND IS NOT REGISTERED YET, JUST UPDATE THE PENDINGFRIENDS TABLE 
+	 * AND DEAL WITH IT IF AND WHEN THEY SIGN UP
+	 */
+	else {		/* NOT REGISTERED YET, UPDATE PENDINGFRIENDS AND WAIT FOR THEM */
+		$query = "UPDATE pendingfriends SET replyfrom='$email', replied='NOW()' WHERE AUTHCODE='$conf'";
+		$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+	}
+
+}
+fclose($fp);
+if ($online) header("location: ../index.php");
+
+?>

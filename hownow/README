@@ -1,0 +1,58 @@
+GRAPHS ARE COMPLETELY BROKEN AND NEED TO BE TOTALLY REDONE
+==========================================================
+GOOD EXPLANATION OF JQPLOT
+http://www.prodevtips.com/2011/03/29/why-i-used-jqplot-for-chartbasketcom-instead-of-flot/
+GOOD DEMO FROM THE SAME GUY
+http://chartbasket.com/?series0=fred&sid0=UMCSENT&series1=fred&sid1=CONSUMER&series2=fred&sid2=CCLBSHNO&series3=index&sid3=cpi_shiller&sdate=2004-01-01&edate=2011-03-29
+
+MORRIS.JS MIGHT BE OK: http://www.oesmith.co.uk/morris.js/#lines
+
+
+
+EMOTAG/HOWNOW - DATABASE STRUCTURE
+==================================
+
+PRETTY WELL FIXED NOW>
+
+run createtables.php to rebuild the tables (almost)
+- friend invite code isn't connecting friends
+
+- twitter integration is broken (comment it out)
+- graphing is broken (and should be updated anyhow)
+
+I destroyed the database thinking I'd never need it again.  Wrong.
+So let's rebuild it here.  Shouldn't take too long.
+
+login.php is helpful
+
+DATABASE
+========
+include/db.php -> mysql_select_db('emo') or die('Could not select database');
+
+TABLES
+======
+
+users
+	id
+	login
+	password
+	email 
+	lang
+
+	bday, bmon, byr
+	city
+	telno
+	twitter
+
+friends
+	id
+	login
+	last
+	prev
+	now
+
+pendingfriends
+INSERT into pendingfriends (fromfriend, tofriend, asked, authcode)
+
+emotags
+	 APotags (id, E, why, added, H, A, L, T, F, S, P, D, u1, u2, u3, x2, x3)

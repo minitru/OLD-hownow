@@ -1,0 +1,73 @@
+<?php
+$em_welcome="Welcome to how:now!";
+$em_welcome_txt="Hey  - this is Sean from how:now.
+
+	Welcome to how:now, your account has been created and should work,
+	you can start following your life and generating graphs now.
+
+	Just go to http://hownow.me/ and log in!
+
+	You can also enter emodata via e-mail to mailto:me@hownow.me
+	and via Twitter (provided you gave us your Twitter ID so we
+	could follow you...
+
+	It's easy - just include E@# in the email or tweet... where
+	# is the level from 0-10, i.e. E@10 is really, really happy.
+
+	Others 	H=hungry, so H@2 isn't very hungry.
+		A=Angry, so A@9 is trouble.
+		L=Lonely, so L@0 is great, and
+		T=Tired, so T@2 is well rested...
+
+	There are more codes, but that should do for now.  We'll catch
+	this stuff off Twitter or your emails and will graph it for you.
+	It's a lot easier than logging in all the time.
+
+        And feel free to drop me a note with any questions, comments or
+	demands!
+--
+Sean MacGuire
+sean@hownow.me";
+
+$em_friendreq="Friend request from";
+$em_new="Hey  - this is Sean from how:now.
+
+        $insert wants to be friends with you.
+
+        To agree and sign up, click here: http://hownow.me/signin.php?section=contact2&email=$insert&conf=$authcode
+
+        how:now is the simple way to graph and track how you're doing,
+        and see how your friends are in a whole new way...
+
+        You can see my how:now graphs here (it's been a tough week)
+                General:  http://hownow.me/sean
+                Detailed: http://hownow.me/big.php?id=1007&graph=emo
+
+        Thanks,
+--
+Sean MacGuire
+sean@hownow.me
+
+Friend Request confirmation code FCC@";
+
+$em_old="Hey - this is Sean from how:now.
+
+        $insert would like to be friends with you.
+
+        To agree, click here: http://hownow.me/gw/cf.php?email=$insert&conf=$authcode
+        or just reply to this e-mail...
+
+        how:now is the simple way to graph and track how you're doing,
+        and see how your friends are in a whole new way...
+
+        You can see my how:now graphs here (it's been a tough week)
+                General:  http://hownow.me/sean
+                Detailed: http://hownow.me/big.php?id=1007&graph=emo
+
+        Thanks,
+--
+Sean MacGuire
+sean@hownow.me
+
+Friend Request confirmation code FCC@";
+?>

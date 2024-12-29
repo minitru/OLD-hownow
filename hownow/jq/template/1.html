@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<!-- EDIT [Page title] -->
+		<title>Your Sitename</title>
+		<!-- END EDIT -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<!-- EDIT [Meta tag] -->
+		<meta http-equiv="reply-to" content="" />
+		<!-- END EDIT -->
+		<!-- EDIT [Include sitename in copyright] -->
+		<meta name="copyright" content="Copyright 2008" />
+		<!-- END EDIT -->
+		<meta name="robots" content="index, follow, noimageclick, noimageindex" />
+		<!-- EDIT [Meta tag] -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!-- END EDIT -->
+		<style type="text/css" media="screen">@import url("./assets/css/reset.css");</style>
+		<style type="text/css" media="screen">@import url("./assets/css/screen.css");</style>
+		<style type="text/css" media="print">@import url("./assets/css/print.css");</style>
+		<!--[if IE 6]>
+			<style type="text/css" media="screen">@import url("./assets/css/screen-ie6.css");</style>
+		<![endif]-->
+		<script type="text/javascript" src="./assets/javascript/jquery-1.2.6.min.js"></script>
+		<script type="text/javascript" src="./assets/javascript/jcarousellite-1.0.1.min.js"></script>
+		<script type="text/javascript" src="./assets/javascript/simplicity.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+			
+				// This is the id of the section that you want to show first
+				start('portfolio');
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="innerContainer">
+				<a accesskey="t" name="top"></a>
+				<p class="hidden skip"><a href="#cn">Skip to content</a></p>
+				<div id="header">
+					<!-- EDIT [Site root URL, Sitename, Tag line] -->
+					<h1><a href="#"><span>Your</span> Sitename</a></h1>
+					<h2>your portfolio tag line goes here</h2>
+					<!-- END EDIT -->
+					<!-- NOTE [See readme file for adding new pages and naming conventions] -->
+					<ul id="navigation">
+						<li><a id="nPortfolio" href="#portfolio">Portfolio</a></li>
+						<li><a id="nAbout" href="#about">About</a></li>
+						<li><a id="nContact" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div id="content">
+				
+					<!-- SECTION [about] -->
+					<a name="about"></a>
+					<div id="about" class="section">
+						<h3>About</h3>
+						<p>Fusce arcu eros, bibendum vel, porttitor id, luctus eu, libero. <a href="#">Nam magna turpis</a>, consectetuer quis, rutrum id, porta id, sem. Nam quam. Donec in dui. Nullam tristique lacus pulvinar nunc. Integer bibendum tellus. Nullam et est in nibh aliquam posuere. Praesent nibh. In in sem nec nisl tristique placerat. <a href="#">Nulla ac dolor</a> sed ipsum accumsan pellentesque. Nulla facilisi. Phasellus adipiscing urna. Nulla nulla. Quisque mollis. Sed quam tortor, sollicitudin in, laoreet nec, ultricies vel, justo. Donec nec arcu.</p>
+					<p>Cras nec augue. Mauris dui lectus, bibendum sed, suscipit ac, lobortis ut, dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu arcu at velit volutpat aliquam. <a href="#">Proin congue arcu</a>. Suspendisse at eros. Aenean molestie consectetuer sapien. Quisque tortor velit, consectetuer ut, gravida quis, ornare non, libero. Sed facilisis purus sit amet dui. Fusce rutrum urna ac nisi sodales posuere.</p>
+					<p>Morbi sapien nisl, dictum eu, eleifend ornare, pretium quis, dui. Pellentesque at sem et augue ullamcorper volutpat. Aenean dolor. Nunc <a href="#">non arcu</a> non justo dapibus aliquam. Praesent id justo in felis consequat adipiscing. Aliquam nec ligula quis nibh sagittis malesuada. Pellentesque ultrices consequat massa. Nunc ut tortor. Duis imperdiet, leo non gravida euismod, quam leo mollis nunc, quis ornare diam eros at dolor. Aenean et mauris. Ut non tellus. Phasellus sagittis ipsum nec quam.</p>
+					</div>
+					
+					<!-- SECTION [contact] -->
+					<a name="contact"></a>
+					<div id="contact" class="section">
+						<h3>Get In Touch</h3>
+						<p>Cras volutpat porta felis. Pellentesque tempus purus quis erat. Suspendisse in lectus. Ut ultrices nibh vitae tellus. Vivamus aliquam lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						<form id="formContact" method="post" action="./send.php" enctype="application/x-www-form-urlencoded">
+							<div>
+								<label for="inputContactName">Name <span class="required">*</span></label>
+								<input id="inputContactName" name="inputContactName" type="text" value="" />
+							</div>
+							<div>
+								<label for="inputContactEmail">Email <span class="required">*</span></label>
+								<input id="inputContactEmail" name="inputContactEmail" type="text" value="" />
+							</div>
+							<div>
+								<label for="inputContactSubject">Subject <span class="required">*</span></label>
+								<input id="inputContactSubject" name="inputContactSubject" type="text" value="" />
+							</div>
+							<div>
+								<label for="inputContactMessage">Message <span class="required">*</span></label>
+								<textarea id="inputContactMessage" name="inputContactMessage" rows="7" cols="30"></textarea>
+							</div>
+							<p><input id="buttonSend" class="button" type="submit" value="Send Message" /></p>
+						</form>
+						<p class="formNote"><span class="required">*</span> indicates a required field</p>
+					</div>
+					
+					<!-- SECTION [portfolio] -->
+					<a name="portfolio"></a>
+					<div id="portfolio" class="section"><div>
+						<ul class="carouselContainer">
+						
+							<!-- PANEL [photo1] -->
+							<li class="panel">
+								<div class="overview">
+									<img src="./assets/images/portfolio/1.jpg" width="369px" height="245px" alt="Photo 1" />
+									<h3>Details</h3>
+									<p>This could be anything, details about the photograph or details about the design job, or whatever else you can think of.</p>
+									<p>Date: dd/mm/yyyy<br />
+										Camera: Canon EOS 450d</p>
+								</div>
+								<div class="extended">
+									<h3>Item Title</h3>
+									<p>Cras sollicitudin vulputate orci. Mauris aliquam imperdiet erat. Curabitur augue ipsum, commodo vel, interdum ut, pulvinar in, magna. Nam ultricies neque sit amet nibh. Duis euismod, massa at molestie tincidunt, leo mi volutpat leo, vel consequat ligula dolor vel mauris. <a href="#">Ut ut massa</a>. Maecenas pulvinar posuere arcu. Fusce porttitor, magna ac venenatis semper, diam mi faucibus sapien, id tincidunt risus lacus a nibh. Suspendisse feugiat nibh a elit.</p>
+								</div>
+							</li>
+							
+							<!-- PANEL [photo2] -->
+							<li class="panel">
+								<div class="overview">
+									<img src="./assets/images/portfolio/2.jpg" width="369px" height="245px" alt="Photo 2" />
+									<h3>Details</h3>
+									<p>This could be anything, details about the photograph or details about the design job, or whatever else you can think of.</p>
+									<p>Date: dd/mm/yyyy<br />
+										Camera: Canon EOS 450d</p>
+								</div>
+								<div class="extended">
+									<h3>Item Title</h3>
+									<p>Ut faucibus urna id nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Aenean volutpat, risus sit amet scelerisque porttitor, pede magna sagittis tellus, sed tempus velit neque hendrerit justo. Maecenas id purus nec erat malesuada ultricies. Suspendisse pulvinar purus quis odio. Cras malesuada tellus at sapien. Nulla facilisi. In auctor, libero vitae commodo rhoncus.</p>
+								</div>
+							</li>
+							
+							<!-- PANEL [photo3] -->
+							<li class="panel">
+								<div class="overview">
+									<img src="./assets/images/portfolio/3.jpg" width="369px" height="245px" alt="Photo 3" />
+									<h3>Details</h3>
+									<p>This could be anything, details about the photograph or details about the design job, or whatever else you can think of.</p>
+									<p>Date: dd/mm/yyyy<br />
+										Camera: Canon EOS 450d</p>
+								</div>
+								<div class="extended">
+									<h3>Item Title</h3>
+									<p>Ut euismod, neque sit amet elementum cursus, massa arcu viverra quam, congue gravida augue sem eu urna. Vivamus mattis leo sit amet leo. Nunc vitae <a href="#">mauris ut nulla</a> tempor semper. Phasellus gravida metus. Cras ullamcorper. Phasellus pulvinar, arcu vehicula dapibus rhoncus, turpis augue vulputate augue, id pulvinar velit sem consequat magna. Pellentesque accumsan dapibus est. In hac habitasse platea dictumst.</p>
+								</div>
+							</li>
+							
+							<!-- PANEL [photo4] -->
+							<li class="panel">
+								<div class="overview">
+									<img src="./assets/images/portfolio/4.jpg" width="164px" height="245px" alt="Photo 4" />
+									<h3>Details</h3>
+									<p>This could be anything, details about the photograph or details about the design job, or whatever else you can think of.</p>
+									<p>Date: dd/mm/yyyy<br />
+										Camera: Canon EOS 450d</p>
+								</div>
+								<div class="extended">
+									<h3>Item Title</h3>
+									<p>Sed vitae purus non quam lobortis porttitor. Vivamus rutrum. Morbi fringilla aliquam elit. Quisque mollis magna a pede. Aenean ac nisl. Aliquam vel risus. Morbi nec ipsum non velit imperdiet eleifend. Integer felis diam, eleifend nec, mattis eget, condimentum quis, ligula. Proin convallis facilisis est. Nullam commodo arcu vel nibh.</p>
+								</div>
+							</li>
+						</ul>
+					</div></div>
+				</div>
+				<div id="footer">
+					<!-- EDIT [Sitename] -->
+					<p>Copyright (c) 2008 Your Sitename. All rights reserved.</p>
+					<!-- END EDIT -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

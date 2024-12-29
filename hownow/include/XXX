@@ -1,0 +1,29 @@
+
+$pr_emo="Your Emograph";
+$pr_emo_txt="This is a sample emograph... measure your happiness on a scale from 1-10, 1 being miserable, and 10 being ecstatic - you can give a reason if you like.
+<BR><BR>
+Note that you can input via e-mail <A HREF=\"mailto:me@hownow.me\">me@hownow.me</A> and <A HREF=\"http://twitter.com\">Twitter</A> as well... just use the form E@#, i.e. E@10 is pretty happy!";
+
+$pr_halt="HALT";
+$pr_halt_txt="This is the HALT graph... HALT stands for Hungry-Angry-Lonely-Tired.  <BR><BR>
+These states are generally transient, meaning they don't last for too long; however, it's important to keep track of them since they, probably more than any other emotions, can adversly affect our behavior and actions.";
+
+$pr_fspd="FSPD";
+$pr_fspd_txt="This is the FSPD graph - short for Fear, Sick, Pain, and Drunk.
+<BR><BR>
+Fear includes things like apprehension, nervousness and anxiety.
+<BR><BR>
+Pain likewise has an obvious effect on our happiness.
+<BR><BR>
+Sick - not feeling well affects your mood... so track it here.
+<BR><BR>
+Drunk - includes being under the influence of any mind altering chemical, legal or not.";
+
+$pr_bio="Biothythms";
+$pr_bio_txt="how:now calculates you biorhythms every day.  The idea is that when the lines are low, you're low physically, emotionally, or intellectually.  On the other hand, when the lines are high, you're in great shape.  
+<BR><BR>
+However, the real thing to watch out for is when the lines cross the center line... those are known as 'critical days', and you need to pay attention more carefully...";
+$pr_inv="Invite";
+$pr_del="Remove";
+$pr_farewell="Farewell";
+?>

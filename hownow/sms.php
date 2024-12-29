@@ -1,0 +1,10 @@
+        var request = new XMLHttpRequest();
+    request.open("POST", "http://www.txtdrop.com/widget_send.php",false);
+        request.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    request.send("npa="+npa.value+"&exchange="+exchange.value+"&number="+number.value+"&email="+email.value+"&body="+message.value+"&submitted=1");
+    var msgstatus = request.responseText;
+    document.getElementById("status").innerHTML = msgstatus;
+        npa.value = "";
+        exchange.value = "";
+        number.value = "";
+        message.value = "";
